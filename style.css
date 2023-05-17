@@ -1,0 +1,12 @@
+body {
+  width: 100%;
+}
+
+.hover-effect {
+  margin-left: 30px;
+}
+
+.hover-effect:hover {
+  background-color: #435cb5;
+  border-radius: 5px;
+}

@@ -11,17 +11,18 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white px-5 fixed shadow-sm">
+    <nav
+      class="navbar navbar-expand-xl bg-white px-5 bg-body-light shadow-sm fixed-top"
+    >
       <div class="container-fluid">
-        <img
-          src="./images/Official FS Logo PNG.png"
-          class="w-5 img-fluid d-none"
-          alt=""
-        />
-        <a href="" class="navbar-brand fs-2 fw-semibold" style="color: #130101"
+        <a
+          href="#"
+          class="navbar-brand fw-bold"
+          style="color: #130101; font-size: 30px; display: flex"
           >FleetSimplify</a
         >
 
@@ -29,26 +30,29 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navmenu">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto fw-semibold" style="color: #5c5858">
-            <li class="nav-item">
+            <li class="nav-item hover-effect">
               <a href="#" class="nav-link">Rent out your vehicle</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item hover-effect">
               <a href="#" class="nav-link">Drivers looking for vehicles</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Management Plan</a>
+            <li class="nav-item hover-effect">
+              <a href="#" class="nav-link">Management Plans</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item hover-effect">
               <a href="#" class="nav-link">Faqs</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item hover-effect">
               <a href="#" class="nav-link">Contact Us</a>
             </li>
           </ul>
@@ -56,7 +60,7 @@
       </div>
     </nav>
 
-    <!-- Showcase -->
+    <!-- ShowCase -->
 
     <section class="bg-white p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
       <div class="container">
@@ -75,34 +79,31 @@
               Rent out your vehicle
             </button>
           </div>
-          <img
-            class="img-fluid w-50 d-none d-sm-block"
-            src="./images/Gig_car.png"
-            alt=""
-          />
+          <img class="img-fluid mt-3" src="./images/Gig_car.png" alt="" />
         </div>
       </div>
     </section>
 
-    <!-- case -->
+    <!-- Punto -->
 
-    <section class="p-5">
+    <section class="p-5" style="background-color: #f6f8fb">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
+        <div class="row">
           <div class="col-md">
-            <img src="./images/Partner - Home.png" class="img-fluid" alt="" />
+            <img src="./images/Partner - Home.png" alt="" class="img-fluid" />
           </div>
+
           <div class="col-md p-5">
-            <h4 class="pb-4">
-              Calculate earnings your vechile can possibly generate
+            <h4 class="pb-2" style="font-size: 17px; color: #322f2f">
+              Calculate earnings your vehicle can possibly generate
             </h4>
-            <p class="lead fw-semibold" style="font-size: 17px; color: #4a4646">
-              Even before yo onboard your vechile, see what revenues it can
-              generate. <br />
-              If you are ok with that, proceed to onboard your vehicle
+            <p class="pb-3 fw-semibold" style="color: #4a4646; font-size: 15px">
+              Even before you onboard your vehicle, see what revenues it can
+              generate.<br />If you are ok with that, proceed to onbaord your
+              vehicle.
             </p>
             <button
-              class="btn btn-danger mb-3 rounded-pill fw-semibold"
+              class="btn btn-danger mb-4 rounded-pill fw-semibold"
               style="
                 background-color: #3a7fe6;
                 border: 0;
@@ -112,14 +113,17 @@
             >
               Calculate earnings
             </button>
-            <h4 class="pb-4">Agree to management agreement</h4>
-            <p class="lead fw-semibold" style="font-size: 17px; color: #4a4646">
+
+            <h4 class="pb-2" style="font-size: 17px; color: #322f2f">
+              Agree to management agreement
+            </h4>
+            <p class="pb-3 fw-semibold" style="color: #4a4646; font-size: 15px">
               Our agreement is standard and available online. No hidden terms.
-              You read the agreement , and if ok with it, you will e-sign during
-              the onboarding exercise
+              You read the<br />agreement, and if ok with it, you will e-sign
+              during the onboarding exercise.
             </p>
             <button
-              class="btn btn-danger mb-3 rounded-pill fw-semibold"
+              class="btn btn-danger mb-4 rounded-pill fw-semibold"
               style="
                 background-color: #3a7fe6;
                 border: 0;
@@ -129,15 +133,18 @@
             >
               View Agreement
             </button>
-            <h4 class="pb-4">Onboard via the app</h4>
-            <p class="lead fw-semibold" style="font-size: 17px; color: #4a4646">
+
+            <h4 class="pb-2" style="font-size: 17px; color: #322f2f">
+              Onboard via the app
+            </h4>
+            <p class="pb-3 fw-semibold" style="color: #4a4646; font-size: 15px">
               We have built an app for our clients to onboard their cars, see
-              the performance of their cars, access revenues in real-time,
-              communicate in-app, see asset maintainance history, see car
+              the performance of<br />their cars, access revenues in real-time,
+              communicate in-app, see asset<br />maintenance history, see car
               location and mileage, etc.
             </p>
             <button
-              class="btn btn-danger mb-3 rounded-pill fw-semibold"
+              class="btn btn-danger mb-4 rounded-pill fw-semibold"
               style="
                 background-color: #3a7fe6;
                 border: 0;
@@ -147,18 +154,20 @@
             >
               View App Screenshots
             </button>
-            <h4 class="pb-4">
-              Access your money via the app's ewallet. You make money
-              stress-free
+
+            <h4 class="pb-2" style="font-size: 17px; color: #322f2f">
+              Acces your money via the app's ewallet. You make money stress-free
             </h4>
-            <p class="lead fw-semibold" style="font-size: 17px; color: #4a4646">
+            <p class="pb-3 fw-semibold" style="color: #4a4646; font-size: 15px">
               Drivers pay via the mobile app and you access the money in
-              real-time via the app. The ewallet feature enables both the driver
-              and partner to pay and receive money.FleetSimplify handles all
-              fleet management work while you earn money hassle-free.
+              real-time via the app. The<br />
+              ewallet feature enables both the driver and partner to pay and
+              receive money.<br />
+              FleetSimplify handles all fleet management work while you earn
+              money hassle-free
             </p>
             <button
-              class="btn btn-danger mb-3 rounded-pill fw-semibold"
+              class="btn btn-danger mb-4 rounded-pill fw-semibold"
               style="
                 background-color: #3a7fe6;
                 border: 0;
@@ -166,7 +175,7 @@
                 width: 198px;
               "
             >
-              View App Screenshots
+              Calculate earnings
             </button>
           </div>
         </div>
@@ -174,19 +183,23 @@
     </section>
 
     <!-- Punto -->
-    <section class="p-5">
+    <section class="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
+        <div class="row">
           <button
             class="btn btn-light shadow-lg rounded-circle fs-3"
             style="width: 70px; height: 70px"
           >
             1
           </button>
-          <div class="col-md p-5">
-            <img src="./img/fixed.png" alt="" />
-            <h2 class="pb-4">You earn well, and without hustling</h2>
-            <p class="lead fw-semibold" style="font-size: 18px; color: #4a4646">
+          <div class="col-lg p-5">
+            <h2 class="pb-4" style="font-size: 25px; width: 284px">
+              You earn well, and without hustling
+            </h2>
+            <p
+              class="lead fw-semibold"
+              style="font-size: 18px; color: #4a4646; width: 362px"
+            >
               Once you onboard your car to Fleetsimplify via the app, that’s it.
               We handle the rest. From onboarding your vehicle to ride-sharing
               apps, hiring drivers, collecting revenue, to taking care of
@@ -194,7 +207,7 @@
             </p>
           </div>
           <div class="col-md mb-4">
-            <img src="./images/bann.png" class="img-fluid" alt="" />
+            <img src="./images/bann.png" class="img-fluid w-100" alt="" />
           </div>
         </div>
       </div>
@@ -214,11 +227,13 @@
             2
           </button>
           <div class="col-md p-5">
-            <img src="./img/fixed.png" alt="" />
-            <h2 class="text-white pb-4">
+            <h2 class="text-white pb-4" style="font-size: 25px; width: 427px">
               Track Performance of your business and your vehicles on our app
             </h2>
-            <p class="lead fw-semibold text-white" style="font-size: 18px">
+            <p
+              class="lead fw-semibold text-white"
+              style="font-size: 18px; width: 366px"
+            >
               We provide total transparency to our customers via the app that we
               built for them. The app shows you how much the vehicle has earned,
               its realtime location, KM covered, service done, asset maintenance
@@ -243,9 +258,13 @@
             3
           </button>
           <div class="col-md p-5">
-            <img src="./img/fixed.png" alt="" />
-            <h2 class="pb-4">Get back your vechile in great condition</h2>
-            <p class="lead fw-semibold" style="font-size: 18px; color: #4a4646">
+            <h2 class="pb-4" style="font-size: 25px; width: 261px">
+              Get back your vechile in great condition
+            </h2>
+            <p
+              class="lead fw-semibold"
+              style="font-size: 18px; color: #4a4646; width: 397px"
+            >
               Our drivers handle the vehicles with utmost care and
               responsibility. Our tech tools help to realize that. Once you end
               your contract, your vehicle is in good shape.
@@ -272,33 +291,76 @@
             4
           </button>
           <div class="col-md p-5">
-            <img src="./img/fixed.png" alt="" />
-            <h2 class="text-white pb-4">
+            <h2 class="text-white pb-4" style="font-size: 25px; width: 434px">
               For automakers and autodealers. You dont worry about loss of
               revenue due to low sales
             </h2>
-            <p class="lead fw-semibold text-white" style="font-size: 18px">
+            <p
+              class="lead fw-semibold text-white"
+              style="font-size: 18px; width: 380px"
+            >
               No more vehicles wallowing in the parking waiting for buyers. We
               monetize the vechile for you. Besides, the world is moving towards
               shared mobility. Ownership of vehicles will be less and less
             </p>
           </div>
           <div
-            class="bg-white col-md rounded justify-content-between align-items-center mb-4"
+            class="bg-white col-xl-6 text-center rounded mb-4"
+            style="height: 352px; width: 540px"
           >
-            <div class="">
-              <img src="./images/Nissan.png" class="img-f" alt="" />
-              <img src="./images/Hyundai.png" class="img-f" alt="" />
-              <img src="./images/Toyota.png" class="img-f" alt="" />
+            <div>
+              <img
+                src="./images/Nissan.png"
+                class="col-sm-4 img-fluid mx-2"
+                alt=""
+                style="width: 20%"
+              />
+              <img
+                src="./images/Hyundai.png"
+                class="img-fluid mx-2"
+                alt=""
+                style="width: 20%"
+              />
+              <img
+                src="./images/Toyota.png"
+                class="img-fluid mx-2"
+                alt=""
+                style="width: 20%"
+              />
             </div>
             <div>
-              <img src="./images/Wagen.png" class="img-f" alt="" />
-              <img src="./images/Honda.png" class="img-f" alt="" />
-              <img src="./images/Suzuki.png" class="img-f" alt="" />
+              <img
+                src="./images/Wagen.png"
+                class="img-fluid mx-2"
+                alt=""
+                style="width: 20%"
+              />
+              <img
+                src="./images/Honda.png"
+                class="img-fluid mx-2"
+                alt=""
+                style="width: 20%"
+              />
+              <img
+                src="./images/Suzuki.png"
+                class="img-fluid mx-2"
+                alt=""
+                style="width: 20%"
+              />
             </div>
             <div>
-              <img src="./images/Isuzu.png" class="img-f" alt="" />
-              <img src="./images/Motors.png" class="img-f" alt="" />
+              <img
+                src="./images/Isuzu.png"
+                class="img-fluid mx-2"
+                alt=""
+                style="width: 30%"
+              />
+              <img
+                src="./images/Motors.png"
+                class="img-fluid mx-2"
+                alt=""
+                style="width: 50%"
+              />
             </div>
           </div>
         </div>
@@ -324,8 +386,8 @@
         </p>
 
         <div class="row mt-5">
-          <div class="col">
-            <div class="card mb-3" style="width: 24rem; height: 224px">
+          <div class="col-md-6">
+            <div class="card mb-5" style="width: 24rem; height: 224px">
               <img
                 src="./images/driver.png"
                 class="position-absolute rounded-circle"
@@ -347,7 +409,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col mb-5">
             <div class="card" style="width: 24rem; height: 224px">
               <img
                 src="./images/car.png"
@@ -396,7 +458,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col mb-5">
             <div class="card" style="width: 24rem; height: 224px">
               <img
                 src="./images/Wallet.png"
@@ -422,7 +484,7 @@
           </div>
 
           <div class="col">
-            <div class="card mb-3" style="width: 24rem; height: 224px">
+            <div class="card mb-5" style="width: 24rem; height: 224px">
               <img
                 src="./images/matics.png"
                 class="position-absolute rounded-circle"
@@ -469,7 +531,7 @@
           </div>
 
           <div class="col">
-            <div class="card" style="width: 24rem; height: 224px">
+            <div class="card mb-5" style="width: 24rem; height: 224px">
               <img
                 src="./images/module.png"
                 class="position-absolute rounded-circle"
@@ -491,7 +553,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col mb-5">
             <div class="card mb-3" style="width: 24rem; height: 224px">
               <img
                 src="./images/check.png"
@@ -539,7 +601,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col mb-5">
             <div class="card mt-3" style="width: 24rem; height: 224px">
               <img
                 src="./images/star.png"
@@ -625,8 +687,8 @@
           or bus-sharing app available. Our overarching goal is profit
           maximization for our customers. A vehicle can be on multiple apps.
         </p>
-        <div class="row row-cols-4">
-          <div class="col">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-6">
             <div class="" style="width: 10rem">
               <div class="">
                 <img src="./images/Uber.png" class="img-fluid" alt="" />
@@ -634,7 +696,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-3 col-md-4 col-6">
             <div class="" style="width: 10rem">
               <div class="">
                 <img src="./images/Bolt.png" class="img-fluid" alt="" />
@@ -642,7 +704,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-3 col-md-4 col-6">
             <div class="" style="width: 10rem">
               <div class="">
                 <img src="./images/Little.png" class="img-fluid" alt="" />
@@ -650,7 +712,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-3 col-md-4 col-6">
             <div class="mb-5" style="width: 10rem">
               <div class="">
                 <img src="./images/Swvl 1.png" class="img-fluid" alt="" />
@@ -658,7 +720,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-3 col-md-4 col-6">
             <div class="" style="width: 10rem">
               <div class="">
                 <img src="./images/OLA.png" class="img-fluid" alt="" />
@@ -666,7 +728,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-3 col-md-4 col-6">
             <div class="" style="width: 10rem">
               <div class="">
                 <img src="./images/Grab 2 1.png" class="img-fluid" alt="" />
@@ -674,7 +736,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-3 col-md-4 col-6">
             <div class="" style="width: 10rem">
               <div class="">
                 <img src="./images/DiDi.png" class="img-fluid" alt="" />
@@ -682,7 +744,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-3 col-md-4 col-6">
             <div class="" style="width: 10rem">
               <div class="">
                 <img src="./images/gojek.png" class="img-fluid" alt="" />
@@ -707,7 +769,7 @@
         </p>
 
         <div class="row mt-3">
-          <div class="col mb-4" style="max-width: 392px; max-height: 398px">
+          <div class="col-lg-4 mb-4 h-100">
             <div class="card">
               <div class="text-center mt-2 mb-2">
                 <img
@@ -726,14 +788,14 @@
                   one of the top startups accelerators in the US. Fleetsimplify,
                   got accepted and funded by Alchemist.
                 </p>
-                <a href="#" class="btn btn-outline-light" style="width: 326px"
+                <a href="#" class="btn btn-outline-light" style="width: 100%"
                   >View More</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col mb-4" style="max-width: 392px; max-height: 398px">
+          <div class="col-lg-4 mb-4 h-100">
             <div class="card">
               <div class="text-center mt-2 mb-2">
                 <img
@@ -752,14 +814,14 @@
                   Istanbul. They chery-pick 100 best startups from across the
                   world for its competition. Fleetsimplify won 3rd position.
                 </p>
-                <a href="#" class="btn btn-outline-light" style="width: 326px"
+                <a href="#" class="btn btn-outline-light" style="width: 100%"
                   >View More</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col mb-4" style="max-width: 392px; max-height: 398px">
+          <div class="col-lg-4 mb-4 h-100">
             <div class="card">
               <div class="text-center mt-2 mb-2">
                 <img
@@ -779,14 +841,14 @@
                   startups based in Africa. Fleetsimplify got into GFSAA Class
                   7.
                 </p>
-                <a href="#" class="btn btn-outline-light" style="width: 326px"
+                <a href="#" class="btn btn-outline-light" style="width: 100%"
                   >View More</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col mb-4" style="max-width: 392px; max-height: 398px">
+          <div class="col-lg-4 mb-4 h-100">
             <div class="card">
               <div class="text-center mt-2 mb-2">
                 <img
@@ -806,14 +868,14 @@
                   3 tracks: Smart Mobility, Smart Housing and Fintech for
                   Affordability.
                 </p>
-                <a href="#" class="btn btn-outline-light" style="width: 326px"
+                <a href="#" class="btn btn-outline-light" style="width: 100%"
                   >View More</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col mb-4" style="max-width: 392px; max-height: 398px">
+          <div class="col-lg-4 mb-4 h-100">
             <div class="card">
               <div class="text-center mt-2 mb-2">
                 <img
@@ -834,14 +896,14 @@
                   “Digital Transformation Challenge for Africa 2022” hosted in
                   Paris.
                 </p>
-                <a href="#" class="btn btn-outline-light" style="width: 326px"
+                <a href="#" class="btn btn-outline-light" style="width: 100%"
                   >View More</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col mb-4" style="max-width: 392px; max-height: 398px">
+          <div class="col-lg-4 mb-4 h-100">
             <div class="card">
               <div class="text-center mt-2 mb-2">
                 <img
@@ -861,14 +923,14 @@
                   logistic solutions, in close cooperation with industries and
                   investors, securing sustainability and success.
                 </p>
-                <a href="#" class="btn btn-outline-light" style="width: 326px"
+                <a href="#" class="btn btn-outline-light" style="width: 100%"
                   >View More</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col mb-4" style="max-width: 392px; max-height: 398px">
+          <div class="col-lg-4 mb-4 h-100">
             <div class="card">
               <div class="text-center mt-2 mb-2">
                 <img
@@ -888,14 +950,14 @@
                   ecosystem. In 2020, Fleetsimplify was Top 5 Finalists of the
                   program.
                 </p>
-                <a href="#" class="btn btn-outline-light" style="width: 326px"
+                <a href="#" class="btn btn-outline-light" style="width: 100%"
                   >View More</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col mb-4" style="max-width: 392px; max-height: 398px">
+          <div class="col-lg-4 mb-4 h-100">
             <div class="card">
               <div class="text-center mt-2 mb-2">
                 <img
@@ -914,14 +976,14 @@
                   female tech founders from Africa. The startups get selected
                   after a rigorous selection & interview process.
                 </p>
-                <a href="#" class="btn btn-outline-light" style="width: 326px"
+                <a href="#" class="btn btn-outline-light" style="width: 100%"
                   >View More</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col mb-4" style="max-width: 392px; max-height: 398px">
+          <div class="col-lg-4 mb-4 h-100">
             <div class="card">
               <div class="text-center mt-2 mb-2">
                 <img
@@ -937,7 +999,7 @@
                   that empowers entrepreneurs in Africa, Asia, and Latin America
                   through programmes and startup hubs.
                 </p>
-                <a href="#" class="btn btn-outline-light" style="width: 326px"
+                <a href="#" class="btn btn-outline-light" style="width: 100%"
                   >View More</a
                 >
               </div>
