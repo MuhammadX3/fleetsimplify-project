@@ -10,3 +10,15 @@ body {
   background-color: #435cb5;
   border-radius: 5px;
 }
+
+.effect:hover {
+  color: white !important;
+}
+
+.responsive {
+  width: 100%;
+}
+
+.responsives {
+  width: 60%;
+}
